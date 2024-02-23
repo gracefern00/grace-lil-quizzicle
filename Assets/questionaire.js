@@ -1,4 +1,4 @@
-Let questions = [
+let questions = [
   {
     numb: 1,
     question: "Inside which HTML element do we put the JavaScript?",
@@ -9,7 +9,7 @@ Let questions = [
       "C. js",
       "D. script"
     ]
-  }
+  },
   {
     numb: 2,
     question: "How to write an IF statement in JavaScript?",
@@ -20,7 +20,7 @@ Let questions = [
       "C. if i = 5",
       "D. if i = 5 then"
     ]
-  }
+  },
   {
     numb: 3,
     question: "Which operator is used to assign a value to a variable?",
@@ -31,7 +31,7 @@ Let questions = [
       "C. x",
       "D. -"
     ]
-  }
+  },
   {
     numb: 4,
     question: "How can you add a comment in a JavaScript?",
@@ -42,7 +42,7 @@ Let questions = [
       "C. //This is a comment",
       "D. I just made a comment hehe"
     ]
-  }
+  },
   {
     numb: 5,
     question: "Which event occurs when the user clicks on an HTML element?",
