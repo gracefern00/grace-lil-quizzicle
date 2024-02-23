@@ -1,39 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz Website</title>
   <link rel="stylesheet" href="Assets\style.css">
 </head>
+
 <body>
 
   <main class="main">
     <header class="header">
-        <a href="#" class="branding">Grace's Lil Quizzicle</a>
+      <a href="#" class="branding">Grace's Lil Quizzicle</a>
 
-        <nav class="quizstats">
-          <a href="#">View High Scores</a>
-          <a href="#">Time Left:</a>
-        </nav>
+      <nav class="quizstats">
+        <a href="#">View High Scores</a>
+        <a href="#">Time Left:</a>
+      </nav>
     </header>
 
-    <section class="quiz">
-      <div class="quiz-content">
-        <h1>Quiz Yourself</h1>
-        <p>Test your coding knowledge!</p>
-        <button class="start-button">Start</button>
-      </div>
-    </section>
+    <div class="container">
+      <section class="quiz-section">
+        <div class="quiz-box">
+          <h1>Javascript Questions</h1>
+          <div class="quiz-header">
+            <span>Test your Javascript knowledge!</span>
+            <span class="header-score">Score: 0 / 5</span>
+          </div>
+
+          <h2 class="question-text">Inside which HTML element do we put the JavaScript?</h2>
+
+          <div class="option-list">
+            <div class="option">
+              <span>A. javascript</span>
+            </div>
+            <div class="option">
+              <span>B. scripting</span>
+            </div>
+            <div class="option">
+              <span>C. js</span>
+            </div>
+            <div class="option">
+              <span>D. script</span>
+            </div>
+          </div>
+
+          <div class="quiz-footer">
+            <span class="question-total">1 of 5 Questions</span>
+            <button class="next-button">Next</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz">
+        <div class="quiz-content">
+          <h1>Quiz Yourself</h1>
+          <p>Test your coding knowledge!</p>
+          <button class="start-button">Start</button>
+        </div>
+      </section>
+    </div>
   </main>
 
   <div class="popup-info">
     <h2>Quiz Guide</h2>
-    <span class="info">1. TEXT GOES HERE</span>
-    <span class="info">2. TEXT GOES HERE</span>
-    <span class="info">3. TEXT GOES HERE</span>
-    <span class="info">4. TEXT GOES HERE</span>
-    <span class="info">5. TEXT GOES HERE</span>
+    <span class="info">1. Correctly answer as many questions as possible</span>
+    <span class="info">2. Not ready to take the quiz? Hit "Exit Quiz"</span>
+    <span class="info">3. Ready to test your knowledge? Hit "Continue"</span>
+    <span class="info">4. Have fun!</span>
 
     <div class="button-group">
       <button class="info-button exit-button">Exit Quiz</button>
@@ -43,6 +78,7 @@
 
   <script src="Assets\questionaire.js"></script>
   <script src="Assets\script.js"></script>
-  
+
 </body>
+
 </html>

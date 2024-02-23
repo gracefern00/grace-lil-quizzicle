@@ -7,6 +7,7 @@
 
 body {
   color: #fff;
+  overflow: hidden;
 }
 
 .header {
@@ -47,7 +48,15 @@ body {
   background: #DACAC4;
 }
 
+.container {
+  display: flex;
+  height: 100vh;
+  width: 200%;
+}
+
 .quiz {
+  position: relative;
+  left: -50%;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -105,6 +114,12 @@ body {
   padding: 10px;
   opacity: 0;
   pointer-events: none;
+  transition: .5s;
+}
+
+.popup-info.active {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .popup-info h2 {
@@ -153,4 +168,103 @@ body {
 
 .popup-info .button-group .info-button:active {
   opacity: 0.5;
+}
+
+.quiz-section {
+  width: 100%;
+  background: #4120A9;
+  position: relative;
+  /*left: -50%;*/
+  left: 0;
+  transition: 0.5s;
+  transition-delay: 0.25s;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.quiz-section.active {
+  left: 0;
+}
+
+.quiz-box {
+  position: relative;
+  width: 900px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #9FA8EB;
+  border-radius: 25px;
+  padding: 25px;
+} 
+
+.quiz-box h1 {
+  font-size: 50px;
+  text-align: center;
+  padding: 15px;
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-weight: bold;
+  border-bottom: 3px solid #9FA8EB;
+}
+
+.question-text {
+  padding: 10px;
+}
+
+.quiz-header span {
+  font-size: 15px;
+}
+
+.quiz-header .header-score {
+  background: #9FA8EB;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.option-list .option {
+  width: 100%;
+  padding: 5px 10px;
+  background: transparent;
+  border: 2px solid #9FA8EB;
+  border-radius: 3px;
+  font-size: 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.option-list .option:hover {
+  background: #DACAC4;
+  color: #3D393B;
+}
+
+.quiz-box .quiz-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quiz-footer .next-button {
+  background-color: #9FA8EB;
+  color: #3D393B;
+  width: 125px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.quiz-footer .next-button:hover {
+  background: #fff;
 }
