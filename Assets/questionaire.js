@@ -55,3 +55,7 @@ let questions = [
     ]
   }
 ]
+
+// https://www.youtube.com/watch?v=Vp8x8-reqZA&t=4835s 48:39 / 1:35:26
+// https://bootcampspot.instructure.com/courses/4807/assignments/68915?module_item_id=1166706
+// https://bootcampspot.instructure.com/courses/4807/assignments/68915/submissions/71126
