@@ -23,10 +23,13 @@ continueButton.onclick = () => {
 
   showQuestions(0);
   questionCounter(1);
+  HeaderScore();
+
 }
 
 let questionCount = 0;
 let questionNumb = 1;
+let userScore = 0;
 
 const nextButton = document.querySelector('.next-button');
 
@@ -70,10 +73,12 @@ function optionSelected(answer) {
   let correctAnswer = questions[questionCount].answer;
 
   if (userAnswer == correctAnswer) {
-    console.log('correct answer');
+    answer.classList.add('correct');
+    userScore += 1;
+    HeaderScore();
   }
   else {
-    console.log('wrong answer');
+    answer.classList.add('wrong');
   }
 }
 
@@ -81,3 +86,10 @@ function questionCounter(index) {
   const questionTotal = document.querySelector('.question-total');
   questionTotal.textContent = `${index} of ${questions.length} Questions`;
 }
+
+function HeaderScore() {
+  const HeaderScoreText = document.querySelector('.header-score');
+  HeaderScoreText.textContent = `Score: ${userScore} / ${questions.length}`;
+}
+
+// 1:05:43 / 1:35:26 https://www.youtube.com/watch?v=Vp8x8-reqZA&t=4835s
