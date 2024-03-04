@@ -91,5 +91,3 @@ function HeaderScore() {
   const HeaderScoreText = document.querySelector('.header-score');
   HeaderScoreText.textContent = `Score: ${userScore} / ${questions.length}`;
 }
-
-// 1:05:43 / 1:35:26 https://www.youtube.com/watch?v=Vp8x8-reqZA&t=4835s
