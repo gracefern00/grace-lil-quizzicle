@@ -246,6 +246,10 @@ body {
   font-weight: bold;
 }
 
+.option-list .option.disabled {
+  pointer-events: none;
+}
+
 .option-list .option:hover {
   background: #DACAC4;
   color: #3D393B;
@@ -271,10 +275,17 @@ body {
   border-radius: 25px;
   border: none;
   cursor: pointer;
-  /*pointer-events: none;*/
+  pointer-events: none;
   transition: 0.3s;
 }
 
 .quiz-footer .next-button:hover {
   background: #fff;
+}
+
+.quiz-footer .next-btn.active {
+  pointer-events: auto;
+  background: #3D393B;
+  border-color: #3D393B;
+  color: #fff;
 }
